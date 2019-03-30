@@ -1,0 +1,49 @@
+<app-profile></app-profile>
+<!-- <div id="main_content" *ngIf="!checkPreloader">
+	<div class="main_content_wrapper">
+		<h1 class="title">Settings</h1>
+		<form [formGroup]="settingsForm" (ngSubmit)="onSubmit()">
+			<div class="col-lg-6 creating_event">
+				<div class="creating_event_decr">
+					<span>Username</span>
+					<input type="text" class="form-control" formControlName="username" [(ngModel)]="user.userName" placeholder="Pls, write the name, which hade choosen your mom">
+				</div>
+				<div class="creating_event_file">
+					<span>Email</span>
+					<div class="file_input">
+						<input type="text" class="form-control" formControlName="email" [(ngModel)]="user.email" placeholder="How are you smart?">
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 creating_event_second">
+				<div class="creating_event_decr">
+					<span>Public address</span>
+					<input type="text" class="form-control" formControlName="publicAddress" [(ngModel)]="user.publicAddress"
+					 placeholder="A lots of strange number of litters and numbers">
+				</div>
+				<div class="creating_event_file">
+					<span>Phone number</span>
+					<div class="file_input">
+						<input type="text" class="form-control" formControlName="phoneNumber" [(ngModel)]="user.phoneNumber" placeholder="You can trast us">
+					</div>
+				</div>
+			</div>
+			<div class="creating_event_file">
+				<span>File</span>
+				<div class="file">
+					<p>Choose picture</p>
+					<input type="file" class="hide inputfile" id="upload" #uploader (change)="fileChange(uploader.files)" type="file"
+					 accept=".jpg, .jpeg, .png" />
+					<label for="upload"><img src="../../../assets/images/icons/file.png" alt=""></label>
+				</div>
+			</div>
+			<button class="create_event_button" type="submit"><img src="../../../assets/images/icons/logo3.png" alt="">
+				<p>Edit this!</p>
+			</button>
+		</form>
+	</div>
+</div> -->
+
+<div id="preloader" *ngIf="checkPreloader">
+	<div id="loader"></div>
+</div>

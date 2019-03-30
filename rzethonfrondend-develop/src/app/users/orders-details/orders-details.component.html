@@ -1,0 +1,74 @@
+<div id="details" *ngIf="!checkPreloader">
+	<div class="container details_container">
+		<div class="row">
+			<h1 class="title">Order Details {{order?.status}}</h1>
+			<p class="event_timer"><span><countdown-timer [end]="order?.finishOrderDate"></countdown-timer></span> <br> Maximum waiting time for delivery of goods </p>
+			<div class="event_details">
+				<div class="profile">
+					<div class="profile_details_text">
+						<div class="profile_img">
+							<img [src]="order?.organizatorProfileImagePath" alt="">
+						</div>
+						<p class="profile_details author_name">{{order?.organizator}}</p>
+						<br>
+						<p class="profile_details e-mail">{{order?.organizatorEmail}}</p>
+						<br>
+						<p class="profile_details phone">{{order?.organizatorPhone}}</p>
+					</div>
+
+					<div class="event_profile_name">
+						<p class="profile_details name">{{order?.name}} </p>
+					</div>
+					<div class="event_buttons">
+						<!-- <div class="more_inf"><a href="#"><span>More details +</span></a></div> -->
+						<div class="more_inf"><a (click)="enter()"><span>Pick +</span></a></div>
+					</div>
+				</div>
+
+				<div class="event_detail_img">
+					<img [src]="order?.orderImagePath" alt="">
+				</div>
+
+				<div class="event_detail_descr">
+					<div class="money">
+						<div class="money_title">
+							<h6>Price</h6>
+							<div class="money_info"><span>?</span></div>
+							<div class="information"> <span>41%</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+								doloremque voluptate ea iste molestias, cupiditate maxime sunt veniam voluptatibus qui dolor rem aut porro eos
+								ipsum quia eaque possimus repudiandae!</div>
+						</div>
+
+						<p> {{order?.reward}} Neon tokens to reward<br> </p>
+					</div>
+					<div class="location">
+						<h6>Location</h6>
+						<p>{{order?.country}} &nbsp; |</p>
+						<p>&nbsp; {{order?.city}} &nbsp; |</p>
+						<p>&nbsp; {{order?.address}} &nbsp; |</p>
+					</div>
+					<div class="time">
+						<h6>Date</h6>
+						<span>{{order?.finishOrderDate | date:'d MMMM y, h:mm a'}} <br>
+							({{order?.finishOrderDate | date:'M.d.yy'}})</span>
+					</div>
+					<div class="public_address">
+						<h6>Public Adress</h6>
+						<p>{{order?.ethAddress | slice:0:30}} {{order?.ethAddress | slice:-12}}</p>
+					</div>
+				</div>
+
+				<div class="breadcrumps">
+					<h2>Description</h2>
+					<p>{{order?.description}}</p> <br>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="preloader" *ngIf="checkPreloader">
+	<div id="loader"></div>
+</div>

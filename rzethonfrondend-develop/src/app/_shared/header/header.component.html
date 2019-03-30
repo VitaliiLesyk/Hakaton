@@ -1,0 +1,33 @@
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 left_header">
+				<nav  >
+					<ul>
+						<li class="menu_links"><a href="">News</a></li>
+						<li class="menu_links"><a href="">Top</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-lg-6 logo">
+				<div class="logo_img">
+					<a routerLink="main"><img src="../../../assets/images/icons/logo2.png" alt=""></a>
+				</div>
+				<div class="logo_text">
+					<p>Neon</p>
+					<br>
+					<span>For your comfort</span>
+				</div>
+			</div>
+			<div class="col-lg-3 sign">
+				<nav>
+					<ul>
+						<li class="menu_links"><a routerLink="authentication/login" *ngIf="!isAuthenticated">SignUp/LogIn</a>
+							<a routerLink="main" *ngIf="isAuthenticated" (click)="logout()">LogOut</a></li>
+						<li class="menu_links" *ngIf="isAuthenticated"><a routerLink="users/orders">Orders</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>

@@ -1,0 +1,539 @@
+#details {
+	font-family: 'KoHo', sans-serif;
+}
+
+#details .details_container .title {
+	text-align: center;
+	margin-top: 30px;
+	font-size: 26px;
+	color: #0d1b56;
+	margin-bottom: 30px;
+}
+
+#details .details_container .event_timer {
+	text-align: center;
+	font-size: 24px;
+	color: #aaa;
+}
+
+#details .details_container .event_timer span {
+	font-size: 110px;
+	background: -webkit-linear-gradient(#043d5a, #2a3e6c, #543a72, #7c3068, #9a2550);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#details .details_container .event_details {
+	margin-top: 50px;
+}
+
+#details .details_container .event_details .profile {
+	overflow: hidden;
+	clear: both;
+	margin-bottom: 30px;
+}
+
+#details .details_container .event_details .profile .profile_details_text {
+	width: 340px;
+	display: inline-block;
+	float: left;
+	border-right: 1px solid #aaa;
+	padding-right: 10px;
+}
+
+#details .details_container .event_details .profile .profile_details_text .profile_img {
+	float: left;
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	position: relative;
+}
+
+#details .details_container .event_details .profile .profile_details_text .profile_img img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#details .details_container .event_details .profile .profile_details_text .profile_details {
+	color: #bbb;
+	font-size: 18px;
+	display: inline-block;
+	margin: 0;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+#details .details_container .event_details .profile .event_profile_name {
+	display: inline-block;
+	padding-left: 30px;
+}
+
+#details .details_container .event_details .profile .event_profile_name .profile_details {
+	color: #bbb;
+	font-size: 28px;
+	display: inline-block;
+	margin: 30px 0;
+}
+
+#details .details_container .event_details .profile .event_buttons {
+	display: inline-block;
+	margin-left: 30px;
+	margin-top: 20px;
+	-webkit-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	transform: translateY(-5px);
+}
+
+#details .details_container .event_details .profile .event_buttons .more_inf {
+	display: inline-block;
+	position: relative;
+	z-index: 100;
+	background: transparent;
+	text-align: center;
+	z-index: 10;
+	margin-right: 10px;
+	margin-left: 20px;
+}
+
+#details .details_container .event_details .profile .event_buttons .more_inf a {
+	color: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#043d5a), color-stop(#2a3e6c), color-stop(#543a72), color-stop(#7c3068), to(#9a2550));
+	background: linear-gradient(to bottom, #043d5a, #2a3e6c, #543a72, #7c3068, #9a2550);
+	font-family: 'KoHo', sans-serif;
+	font-size: 18px;
+	display: inline-block;
+	position: relative;
+	z-index: 100;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+	padding: 5px 10px;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+
+#details .details_container .event_details .profile .event_buttons .more_inf:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #9A2550;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+#details .details_container .event_details .profile .event_buttons .more_inf:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #043D5A;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+#details .details_container .event_details .profile .event_buttons .more_inf:hover a {
+	background: #fff;
+	color: #aaa;
+	border: 1px solid #000;
+}
+
+#details .details_container .event_details .profile .event_buttons .more_inf:hover:before {
+	right: -8px;
+	bottom: -8px;
+}
+
+#details .details_container .event_details .profile .event_buttons .more_inf:hover:after {
+	top: -8px;
+	left: -8px;
+}
+
+#details .details_container .event_details .profile .event_buttons .spon_inv {
+	display: inline-block;
+}
+
+#details .details_container .event_details .profile .event_buttons .spon_inv input {
+	border: 1px solid #bbb;
+	height: 41px;
+	padding: 10px;
+	width: 270px;
+	font-size: 20px;
+	outline: none;
+}
+
+#details .details_container .event_details .event_detail_img {
+	display: inline-block;
+	width: 55%;
+	float: left;
+	text-align: center;
+}
+
+#details .details_container .event_details .event_detail_img img {
+	height: 418px;
+	width: 625px;
+}
+
+#details .details_container .event_details .event_detail_descr {
+	display: inline-block;
+	width: 45%;
+	float: left;
+	font-size: 16px;
+	color: #0d1b56;
+	padding-left: 20px;
+	border-right: 1px solid #aaa;
+}
+
+#details .details_container .event_details .event_detail_descr .money {
+	position: relative;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+}
+
+#details .details_container .event_details .event_detail_descr .money .money_title {
+	position: relative;
+}
+
+#details .details_container .event_details .event_detail_descr .money .money_title h6 {
+	font-size: 44px;
+	line-height: 27px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	color: #bbb;
+}
+
+#details .details_container .event_details .event_detail_descr .money .money_title .money_info {
+	display: inline-block;
+	vertical-align: top;
+	width: 20px;
+	height: 20px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: #bbb;
+	text-align: center;
+	margin-left: 10px;
+	cursor: pointer;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+
+#details .details_container .event_details .event_detail_descr .money .money_title .money_info span {
+	font-size: 19px;
+	display: inline-block;
+	-webkit-transform: translate(0px, -4px);
+	-ms-transform: translate(0px, -4px);
+	transform: translate(0px, -4px);
+	font-weight: 900;
+}
+
+#details .details_container .event_details .event_detail_descr .money .money_title .money_info:hover, #details .details_container .event_details .event_detail_descr .money .money_title .money_info.active {
+	color: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#043d5a), color-stop(#2a3e6c), color-stop(#543a72), color-stop(#7c3068), to(#9a2550));
+	background: linear-gradient(to bottom, #043d5a, #2a3e6c, #543a72, #7c3068, #9a2550);
+}
+
+#details .details_container .event_details .event_detail_descr .money p {
+	font-size: 30px;
+	color: red;
+	margin: 25px 0 0 0;
+	padding: 0;
+	color: #992550;
+}
+
+#details .details_container .event_details .event_detail_descr .money p span {
+	color: #bbb;
+	font-size: 24px;
+}
+
+#details .details_container .event_details .event_detail_descr .money .information {
+	background: -webkit-gradient(linear, left top, left bottom, from(#043d5a), color-stop(#2a3e6c), color-stop(#543a72), color-stop(#7c3068), to(#9a2550));
+	background: linear-gradient(to bottom, #043d5a, #2a3e6c, #543a72, #7c3068, #9a2550);
+	width: 350px;
+	height: 180px;
+	position: absolute;
+	top: -180px;
+	right: -3000px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	padding: 10px;
+	opacity: 0;
+	z-index: 100;
+	-webkit-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	color: #fff;
+}
+
+#details .details_container .event_details .event_detail_descr .money .information.active {
+	opacity: 1;
+	right: -20px;
+}
+
+#details .details_container .event_details .event_detail_descr .money .information span {
+	display: block;
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+}
+
+#details .details_container .event_details .event_detail_descr .money:before {
+	content: '';
+	position: absolute;
+	width: 90%;
+	height: 1.5px;
+	bottom: 0px;
+	left: 0px;
+	background: #0d1b56;
+}
+
+#details .details_container .event_details .event_detail_descr .free_space, #details .details_container .event_details .event_detail_descr .location, #details .details_container .event_details .event_detail_descr .time, #details .details_container .event_details .event_detail_descr .public_address {
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+}
+
+#details .details_container .event_details .event_detail_descr .free_space h6, #details .details_container .event_details .event_detail_descr .location h6, #details .details_container .event_details .event_detail_descr .time h6, #details .details_container .event_details .event_detail_descr .public_address h6 {
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+	display: block;
+	margin-bottom: 10px;
+	color: #bbb;
+}
+
+#details .details_container .event_details .event_detail_descr .free_space p, #details .details_container .event_details .event_detail_descr .location p, #details .details_container .event_details .event_detail_descr .time p, #details .details_container .event_details .event_detail_descr .public_address p {
+	font-size: 20px;
+	display: inline-block;
+	color: #992550;
+	font-weight: 700;
+	margin: 0;
+}
+
+#details .details_container .event_details .event_detail_descr .free_space span, #details .details_container .event_details .event_detail_descr .location span, #details .details_container .event_details .event_detail_descr .time span, #details .details_container .event_details .event_detail_descr .public_address span {
+	font-size: 20px;
+	display: inline-block;
+	color: #992550;
+	font-weight: 700;
+}
+
+#details .details_container .event_details .event_detail_descr .free_space e, #details .details_container .event_details .event_detail_descr .location e, #details .details_container .event_details .event_detail_descr .time e, #details .details_container .event_details .event_detail_descr .public_address span {
+	color: #bbb;
+	font-size: 20px;
+}
+
+#details .details_container .event_details .event_detail_descr .free_space:after, #details .details_container .event_details .event_detail_descr .location:after, #details .details_container .event_details .event_detail_descr .time:after, #details .details_container .event_details .event_detail_descr .public_address:after {
+	content: '';
+	position: absolute;
+	width: 90%;
+	height: 1.5px;
+	bottom: 0px;
+	left: 0px;
+	background: #0d1b56;
+}
+
+#details .details_container .event_details .event_detail_descr .time {
+	display: inline-block;
+	float: left;
+	margin-right: 30px;
+	width: 25%;
+}
+
+#details .details_container .event_details .event_detail_descr .time:after {
+	height: 100%;
+	width: 1.5px;
+	right: -15px;
+	top: 0;
+	background: #0d1b56;
+	left: unset;
+}
+
+#details .details_container .event_details .event_detail_descr .public_address {
+	width: 65%;
+	display: inline-block;
+}
+
+#details .details_container .event_details .event_detail_descr .public_address:after {
+	display: none;
+}
+
+#details .details_container .event_details .event_team {
+	overflow: hidden;
+	float: left;
+	margin-top: 30px;
+	border-top: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+#details .details_container .event_details .event_team .organisators, #details .details_container .event_details .event_team .visiters, #details .details_container .event_details .event_team .investors {
+	position: relative;
+	max-height: 130px;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+	overflow: hidden;
+}
+
+#details .details_container .event_details .event_team .organisators h5, #details .details_container .event_details .event_team .visiters h5, #details .details_container .event_details .event_team .investors h5 {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	color: #bbb;
+}
+
+#details .details_container .event_details .event_team .organisators .user, #details .details_container .event_details .event_team .visiters .user, #details .details_container .event_details .event_team .investors .user {
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+
+#details .details_container .event_details .event_team .organisators .user img, #details .details_container .event_details .event_team .visiters .user img, #details .details_container .event_details .event_team .investors .user img {
+	width: 50px;
+	height: 50px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+	background: red;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#details .details_container .event_details .event_team .organisators .user p, #details .details_container .event_details .event_team .visiters .user p, #details .details_container .event_details .event_team .investors .user p {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	color: #aaa;
+	vertical-align: middle;
+}
+
+#details .details_container .event_details .event_team .organisators .see_more, #details .details_container .event_details .event_team .visiters .see_more, #details .details_container .event_details .event_team .investors .see_more {
+	margin-bottom: 30px;
+}
+
+#details .details_container .event_details .event_team .organisators .see_more a, #details .details_container .event_details .event_team .visiters .see_more a, #details .details_container .event_details .event_team .investors .see_more a {
+	color: #bbb;
+	font-size: 20px;
+	font-weight: 600;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+
+#details .details_container .event_details .event_team .organisators .see_more a:hover, #details .details_container .event_details .event_team .visiters .see_more a:hover, #details .details_container .event_details .event_team .investors .see_more a:hover {
+	color: #992550;
+}
+
+#details .details_container .event_details .event_team .organisators .organisator_separete, #details .details_container .event_details .event_team .organisators .visiters_separete, #details .details_container .event_details .event_team .organisators .investors_separete, #details .details_container .event_details .event_team .visiters .organisator_separete, #details .details_container .event_details .event_team .visiters .visiters_separete, #details .details_container .event_details .event_team .visiters .investors_separete, #details .details_container .event_details .event_team .investors .organisator_separete, #details .details_container .event_details .event_team .investors .visiters_separete, #details .details_container .event_details .event_team .investors .investors_separete {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	font-size: 30px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+#details .details_container .event_details .event_team .organisators .organisator_separete:hover, #details .details_container .event_details .event_team .organisators .visiters_separete:hover, #details .details_container .event_details .event_team .organisators .investors_separete:hover, #details .details_container .event_details .event_team .visiters .organisator_separete:hover, #details .details_container .event_details .event_team .visiters .visiters_separete:hover, #details .details_container .event_details .event_team .visiters .investors_separete:hover, #details .details_container .event_details .event_team .investors .organisator_separete:hover, #details .details_container .event_details .event_team .investors .visiters_separete:hover, #details .details_container .event_details .event_team .investors .investors_separete:hover {
+	cursor: pointer;
+}
+
+#details .details_container .event_details .event_team .organisators.active, #details .details_container .event_details .event_team .organisators.active2, #details .details_container .event_details .event_team .organisators.active3, #details .details_container .event_details .event_team .visiters.active, #details .details_container .event_details .event_team .visiters.active2, #details .details_container .event_details .event_team .visiters.active3, #details .details_container .event_details .event_team .investors.active, #details .details_container .event_details .event_team .investors.active2, #details .details_container .event_details .event_team .investors.active3 {
+	max-height: 570px;
+}
+
+#details .details_container .event_details .breadcrumps {
+	color: #aaa;
+	font-size: 18px;
+	padding-top: 20px;
+	display: block;
+	overflow: hidden;
+	clear: both;
+}
+
+#preloader {
+	padding-top: 340px;
+	padding-bottom: 300px;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#loader {
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #9370DB;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+
+#loader:before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #BA55D3;
+	-webkit-animation: spin 3s linear infinite;
+	animation: spin 3s linear infinite;
+}
+
+#loader:after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #FF00FF;
+	-webkit-animation: spin 1.5s linear infinite;
+	animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}

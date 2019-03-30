@@ -1,0 +1,21 @@
+<div id="profile">
+	<div class="wrapper">
+		<div class="profile_img">
+			<div class="profile_img_round">
+				<img [src]="path" alt="">
+			</div>
+			<p>{{user?.userName}}</p>
+		</div>
+		<div class="settings">
+			<nav>
+				<ul>
+					<li><a routerLink="/users/create">Create Order*</a></li>
+					<li><a routerLink="/users/myorders">My orders</a></li>
+					<li><a routerLink="/users/orders">Available orders</a></li>
+					<li><a routerLink="/settings">Settings</a></li>
+				</ul>
+			</nav>
+		</div>
+		<span class="arrow"><img src="../../../assets/images/icons/right-arrow.png" alt=""></span>
+	</div>
+</div>

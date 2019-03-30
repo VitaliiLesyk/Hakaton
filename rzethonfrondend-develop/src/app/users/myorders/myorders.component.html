@@ -1,0 +1,45 @@
+<app-profile></app-profile>
+<div id="main_content" *ngIf="!checkPreloader">
+	<h2 class="title">My Orders</h2>
+	<div class="main_content_wrapper">
+		<div class="content" *ngFor="let order of ordersList">
+
+			<div class="left_side_content">
+				<img [src]="order?.orderImagePath" alt="">
+			</div>
+
+			<div class="right_side_content">
+				<h2 class="right_side_content_title">{{order?.name}}</h2>
+				<p class="right_side_content_descr">{{order?.description | slice:0:300}}...</p>
+				<span class="gathared_money"> {{order?.reward}} Neon tokens to reward</span>
+				<span class="free_space">{{order?.city}} | {{order?.country}}</span>
+				<p class="author">{{order?.orderDate | date:'EEEE, MMMM d, y, h:mm a'}}</p>
+				<br><br>
+				<div class="more_inf"><a (click)="onSelectDetails(order)"><span>More details +</span></a></div>
+				<div class="edit"><a (click)="onSelectEdit(order)"><span>Pick+</span></a></div>
+			</div>
+			<div class="separator"><span></span><span></span><span></span></div>
+		</div>
+
+		<div class="no_events" *ngIf="checkEmpty">
+			<div class="content">
+				<div class="left_side_content">
+					<img src="https://unblast.com/wp-content/uploads/2018/06/404-Website-Page-Template.jpg" alt="">
+				</div>
+				<div class="right_side_content">
+					<h2 class="right_side_content_title">Sorry!</h2>
+					<p class="right_side_content_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel illo reiciendis
+						consectetur doloremque! Architecto repellat harum sint odio optio, commodi, ut sit officia et atque quis ex
+						ratione blanditiis aliquid.</p>
+				</div>
+			</div>
+		</div>
+		<button class="create_event_button" routerLink="/users/create"><img src="../../../assets/images/icons/logo3.png" alt="">
+			<p>Create this!</p>
+		</button>
+	</div>
+</div>
+
+<div id="preloader" *ngIf="checkPreloader">
+	<div id="loader"></div>
+</div>

@@ -1,0 +1,39 @@
+/* font-family: "Aleo"; */
+@font-face {
+	font-family: "Roboto-Regular";
+	src: url(../../fonts/Roboto/RobotoMono-Regular.ttf);
+	font-weight: normal;
+}
+
+/* font-family: "AleoBold"; */
+
+@font-face {
+	font-family: "Roboto-Bold";
+	src: url(../../fonts/Roboto/RobotoMono-Bold.ttf);
+	font-weight: bold;
+}
+
+
+/* font-family: "AleoLightItalic; */
+@font-face {
+	font-family: "Roboto-Light";
+	src: url(../../fonts/Roboto/RobotoMono-Light.ttf);
+	font-weight: bold;
+}
+
+/* font-family: "AleoLight"; */
+
+@font-face {
+	font-family: "Roboto-Medium";
+	src: url(../../fonts/Roboto/RobotoMono-Medium.ttf);
+	font-weight: normal;
+}
+
+/* font-family: "NautilusPompiliusRegular"; */
+
+/* font-family: "RobotoCondensedRegular"; */
+
+/* font-family: "RobotoCondensedLight"; */
+
+/* font-family: "RobotoCondensedBold"; */
+

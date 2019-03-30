@@ -1,0 +1,78 @@
+.main {
+	align-items: center;
+	display: flex;
+	font-size: 18px;
+	min-height: 715px;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	transform-style: preserve-3d;
+	perspective: 100px;
+}
+
+.main:before {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(https://www.chinatsfreight.com/wp-content/uploads/2013/09/Courier_Freight.jpg) no-repeat bottom;
+	background-size: cover;
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.main:after {
+	background: #F9FCFF;
+	content: "";
+	height: 40rem;
+	left: -5%;
+	position: absolute;
+	right: -5%;
+	top: 90%;
+	transform-origin: 0 0;
+	transform: rotateZ(-4deg);
+	z-index: 0;
+}
+
+.title, .subtitle {
+	color: #fff;
+}
+
+.subtitle {
+	text-transform: uppercase;
+	margin-bottom: 5rem;
+}
+
+.wrap {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn {
+	padding-top: 7px;
+	width: 140px;
+	height: 45px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-weight: 500;
+	color: #000;
+	background-color: #fff;
+	border: none;
+	border-radius: 45px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #ff5722;
+	box-shadow: 0px 15px 20px rgba(119, 29, 0, 0.73);
+	color: #fff;
+	transform: translateY(-7px);
+}

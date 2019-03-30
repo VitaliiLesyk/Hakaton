@@ -1,0 +1,135 @@
+header {
+	background-image: url(../../../assets/images/backgrounds/background.jpg);
+	background-repeat: repeat-y;
+	padding-top: 15px;
+	padding-bottom: 2px;
+	font-family: 'KoHo', sans-serif;
+}
+
+header .left_header, header .sign {
+	padding-top: 20px;
+}
+
+header .left_header nav ul, header .sign nav ul {
+	margin: 0;
+	list-style: none;
+}
+
+header .left_header nav ul .menu_links, header .sign nav ul .menu_links {
+	display: inline-block;
+}
+
+header .left_header nav ul .menu_links a, header .sign nav ul .menu_links a {
+	color: #FFECE8;
+	font-size: 20px;
+	font-weight: 500;
+	position: relative;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+	overflow: hidden;
+	display: inline-block;
+	padding: 5px 15px 5px 15px;
+}
+
+header .left_header nav ul .menu_links a:before, header .sign nav ul .menu_links a:before {
+	content: '';
+	position: absolute;
+	background: #FFECE8;
+	height: 100%;
+	width: 1.5px;
+	top: -100px;
+	left: 0px;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+header .left_header nav ul .menu_links a:after, header .sign nav ul .menu_links a:after {
+	content: '';
+	position: absolute;
+	background: #FFECE8;
+	height: 1.5px;
+	width: 100%;
+	bottom: 0;
+	left: -100px;
+	-webkit-transition: .7s ease-in-out;
+	transition: .7s ease-in-out;
+}
+
+header .left_header nav ul .menu_links a:hover:before, header .sign nav ul .menu_links a:hover:before {
+	top: 0;
+}
+
+header .left_header nav ul .menu_links a:hover:after, header .sign nav ul .menu_links a:hover:after {
+	left: 0;
+}
+
+header .left_header nav ul .menu_links:nth-child(2) a:before, header .sign nav ul .menu_links:nth-child(2) a:before {
+	left: 0px;
+}
+
+header .logo {
+	text-align: center;
+}
+
+header .logo .logo_img {
+	display: inline-block;
+	-webkit-transform: translateY(-26px);
+	-ms-transform: translateY(-26px);
+	transform: translateY(-26px);
+	padding-right: 15px;
+}
+
+header .logo .logo_img img {
+	width: 85px;
+	height: 85px;
+}
+
+header .logo .logo_text {
+	display: inline-block;
+}
+
+header .logo .logo_text p, header .logo .logo_text span {
+	display: inline-block;
+	color: #fff;
+	font-size: 31px;
+	margin: 0;
+	-webkit-transform: translateX(-30px);
+	-ms-transform: translateX(-30px);
+	transform: translateX(-30px);
+	padding-left: 5px;
+}
+
+header .logo .logo_text span {
+	font-size: 15px;
+	-webkit-transform: translateY(-6px);
+	-ms-transform: translateY(-6px);
+	transform: translateY(-6px);
+}
+
+header .sign nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+header .sign nav ul .menu_links {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+header .sign nav ul .menu_links a {
+	padding: 5;
+	font-size: 18px;
+	color: #FFECE8;
+}
+
+header .sign nav ul .menu_links a:before {
+	left: 0px;
+}
+
+header .sign nav ul .menu_links a:after {
+	left: -300px;
+}
+
+header .sign nav ul .menu_links:nth-child(2) a:before {
+	left: 0px;
+}

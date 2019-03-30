@@ -1,0 +1,20 @@
+<div class="log_in_block">
+		<div class="top_line">
+			<h1>Log In</h1>
+		</div>
+		<div class="main">
+			<div class="log_in">
+				<form [formGroup]="loginForm">
+					<input class="name" formControlName="username" type="text" placeholder="Username">
+					<input type="password" formControlName="password" class="email" placeholder="Password">
+					<div class="sign_in_button"><button (click)="onSubmit()"><img src="../../../assets/images/icons/logo3.png" alt="">
+							<p>Log In</p>
+						</button></div>
+				</form>
+			</div>
+
+		</div>
+		<div class="agree"><input type="checkbox" [checked]="agree" (change)="agree= !agree">
+			<p>I agree to the terms of use privacy policy</p><span>Or <a routerLink="/authentication/register">Sign Up</a></span>
+		</div>
+	</div>

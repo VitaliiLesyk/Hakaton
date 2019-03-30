@@ -1,0 +1,30 @@
+<div class="sign_in_block">
+		<div class="top_line">
+			<h1>Sign Up</h1>
+		</div>
+		<div class="main">
+			<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+				<div class="form name"><span>Name</span><input type="text" class="form-control" formControlName="username"
+					 placeholder="How was you called by your mom?"></div>
+				<div class="form password"><span>Password</span><input class="form-control" formControlName="password" type="password"
+					 placeholder="I am not looking"></div>
+				<div class="form password_confirm"><span>Repeat Pass</span><input class="form-control" formControlName="confirmpass"
+					 type="password" placeholder="Rly, i am not looking"></div>
+				<div class="form email"><span>E-mail</span><input class="form-control" formControlName="email" type="text"
+					 placeholder="How smart you are?"></div>
+				<div class="form public_key"><span>Public Key</span><input class="form-control" formControlName="publicAddress" type="text"
+					 placeholder="How much moeny do have?"></div>
+				<div class="file">
+					<span>File</span>
+					<p>Choose picture</p>
+					<input type="file" class="hide inputfile" id="upload" #uploader (change)="fileChange(uploader.files)" type="file"
+					 accept=".jpg, .jpeg, .png" />
+					<label for="upload"><img src="../../../assets/images/icons/file.png" alt=""></label>
+				</div>
+
+				<div class="sign_in_button"><button><img src="../../../assets/images/icons/logo3.png" alt="">
+						<p>Sign In</p>
+					</button></div>
+			</form>
+		</div>
+	</div>

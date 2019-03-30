@@ -1,0 +1,482 @@
+.sign_in_block {
+	border: 1px solid #aaa;
+	-webkit-border-radius: 11px;
+	border-radius: 11px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#043d5a), color-stop(#2a3e6c), color-stop(#543a72), color-stop(#7c3068), to(#9a2550));
+	background: linear-gradient(to bottom, #043d5a, #2a3e6c, #543a72, #7c3068, #9a2550);
+}
+
+.sign_in_block .top_line {
+	-webkit-border-top-left-radius: 10px;
+	border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	border-top-right-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	margin-bottom: 50px;
+	width: 499px;
+	-webkit-box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.4);
+}
+
+.sign_in_block .top_line h1 {
+	text-transform: uppercase;
+	font-family: "Roboto-Regular";
+	color: #fbe9d2;
+	letter-spacing: .5px;
+	position: relative;
+	margin: 0;
+}
+
+.sign_in_block .top_line h1:before {
+	content: 'LOG IN';
+	position: absolute;
+	right: 10px;
+	top: -40px;
+	color: rgba(255, 255, 255, 0.4);
+	font-size: 80px;
+}
+
+.sign_in_block span {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	font-family: "Roboto-Regular";
+	color: #aaa;
+	position: relative;
+	z-index: 60;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+
+.sign_in_block span a {
+	font-size: 20px;
+	background: -webkit-linear-gradient(#aaa, #ccc);
+	cursor: pointer;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+
+.sign_in_block span a:hover {
+	background: #fff;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+
+.sign_in_block .log_in {
+	display: block;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.sign_in_block .log_in input {
+	outline: none;
+	width: 200px;
+	height: 40px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 2px solid #eee;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #fff;
+	background: transparent;
+}
+
+.sign_in_block .log_in input.name {
+	float: left;
+	margin-left: 20px;
+}
+
+.sign_in_block .log_in input.email {
+	float: right;
+	margin-right: 20px;
+}
+
+.sign_in_block .log_in input:focus {
+	border: 2px solid #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#043d5a), color-stop(#2a3e6c), color-stop(#543a72), color-stop(#7c3068), to(#9a2550));
+	background: linear-gradient(to bottom, #043d5a, #2a3e6c, #543a72, #7c3068, #9a2550);
+	border-image-slice: 4;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.sign_in_block .log_in .sign_in_button {
+	text-align: center;
+	margin-top: 15px;
+	overflow: hidden;
+	margin-top: 70px;
+	width: 200px;
+	margin: 70px auto 0;
+}
+
+.sign_in_block .log_in .sign_in_button button {
+	background: #fff;
+	padding: 6px 30px;
+	border: 1px solid transparent;
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+
+.sign_in_block .log_in .sign_in_button button p {
+	z-index: 50;
+	position: relative;
+	color: #aaa;
+	font-size: 16px;
+	margin: 0;
+	display: inline-block;
+	margin-top: 0px;
+	-webkit-transform: translateY(4px);
+	-ms-transform: translateY(4px);
+	transform: translateY(4px);
+	margin-left: 20px;
+}
+
+.sign_in_block .log_in .sign_in_button button img {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	z-index: 50;
+}
+
+.sign_in_block .log_in .sign_in_button button:before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	bottom: unset;
+	left: 0;
+	width: 101%;
+	height: 2px;
+	background: #aaa;
+	-webkit-transition: .9s ease-in-out;
+	transition: .9s ease-in-out;
+}
+
+.sign_in_block .log_in .sign_in_button button:after {
+	content: '';
+	position: absolute;
+	width: 105%;
+	height: 105%;
+	top: -100px;
+	left: 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#043d5a), color-stop(#2a3e6c), color-stop(#543a72), color-stop(#7c3068), to(#9a2550));
+	background: linear-gradient(to bottom, #043d5a, #2a3e6c, #543a72, #7c3068, #9a2550);
+	-webkit-transition: .7s ease-in-out;
+	transition: .7s ease-in-out;
+}
+
+.sign_in_block .log_in .sign_in_button button:hover {
+	border: 1px solid transparent;
+}
+
+.sign_in_block .log_in .sign_in_button button:hover:before {
+	top: 100%;
+	bottom: 0;
+	-webkit-transition: .7s ease-in-out;
+	transition: .7s ease-in-out;
+}
+
+.sign_in_block .log_in .sign_in_button button:hover:after {
+	top: 0;
+	-webkit-transition: .9s ease-in-out;
+	transition: .9s ease-in-out;
+	border: 1px solid transparent;
+}
+
+.sign_in_block .log_in .sign_in_button button:hover p {
+	color: #fbe9d2;
+}
+
+.sign_in_block .top_line h1:before {
+	content: 'Sign Up';
+}
+
+.sign_in_block .main {
+	text-align: center;
+}
+
+.sign_in_block .main span {
+	display: inline-block;
+	text-align: left;
+}
+
+.sign_in_block .main .form {
+	position: relative;
+	display: inline-block;
+	width: 250px;
+	-webkit-transition: .01s ease-in-out;
+	transition: .01s ease-in-out;
+}
+
+.sign_in_block .main .form span {
+	position: absolute;
+	margin: 0;
+	height: 100%;
+	width: 60px;
+	height: 40px;
+	background: #fff;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	color: #aaa;
+	padding-top: 10px;
+	text-align: center;
+	-webkit-border-top-left-radius: 8px;
+	border-top-left-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	z-index: 50;
+}
+
+.sign_in_block .main .form p {
+	position: absolute;
+	margin: 0;
+	font-size: 12px;
+	color: #aaa;
+	padding-left: 18px;
+	padding-top: 11px;
+	display: none;
+}
+
+.sign_in_block .main .form input {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 15px;
+	border: 0;
+	width: 250px;
+	height: 40px;
+	background: transparent;
+	border: 1px solid #aaa;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	outline: none;
+	padding-left: 64px;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	color: #fff;
+	font-size: 16px;
+}
+
+.sign_in_block .main .form input::-webkit-input-placeholder {
+	color: #aaa;
+	font-size: 12px;
+	text-indent: -1000px;
+	font-weight: 300;
+}
+
+.sign_in_block .main .form.active input {
+	width: 300px;
+	-webkit-transform: translateX(-50px);
+	-ms-transform: translateX(-50px);
+	transform: translateX(-50px);
+}
+
+.sign_in_block .main .form.active input::-webkit-input-placeholder {
+	text-indent: 0;
+}
+
+.sign_in_block .main .form.active span {
+	-webkit-transform: translateX(-50px);
+	-ms-transform: translateX(-50px);
+	transform: translateX(-50px);
+}
+
+.sign_in_block .main .form:nth-child(2) span {
+	font-size: 14px;
+	width: 100px;
+}
+
+.sign_in_block .main .form:nth-child(2) input {
+	padding-left: 104px;
+}
+
+.sign_in_block .main .form:nth-child(2) input::-webkit-input-placeholder {
+	font-size: 12px;
+}
+
+.sign_in_block .main .form:nth-child(3) span {
+	font-size: 14px;
+	width: 100px;
+}
+
+.sign_in_block .main .form:nth-child(3) input {
+	padding-left: 104px;
+}
+
+.sign_in_block .main .form:nth-child(3) input::-webkit-input-placeholder {
+	font-size: 12px;
+}
+
+.sign_in_block .main .form:nth-child(4) span {
+	font-size: 14px;
+	width: 100px;
+}
+
+.sign_in_block .main .form:nth-child(4) input {
+	padding-left: 104px;
+}
+
+.sign_in_block .main .form:nth-child(4) input::-webkit-input-placeholder {
+	font-size: 12px;
+}
+
+.sign_in_block .main .form:nth-child(5) span {
+	font-size: 14px;
+	width: 100px;
+}
+
+.sign_in_block .main .form:nth-child(5) input {
+	padding-left: 104px;
+}
+
+.sign_in_block .main .form:nth-child(5) input::-webkit-input-placeholder {
+	font-size: 12px;
+}
+
+.sign_in_block .main .file {
+	position: relative;
+	margin-bottom: 15px;
+	border: 0;
+	width: 250px;
+	height: 40px;
+	background: transparent;
+	border: 1px solid #aaa;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	outline: none;
+	padding-left: 64px;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	color: #fff;
+	font-size: 16px;
+	margin: 0 auto;
+}
+
+.sign_in_block .main .file span {
+	width: 60px;
+	margin: 0;
+	-webkit-border-top-left-radius: 7px;
+	border-top-left-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+	padding-top: 7px;
+	padding-left: 15px;
+	height: 39px;
+	background: #fff;
+	position: absolute;
+	left: -3px;
+	z-index: 100;
+}
+
+.sign_in_block .main .file img {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	width: 40px;
+	height: 40px;
+}
+
+.sign_in_block .main .file p {
+	margin: 0;
+	padding-top: 10px;
+	text-align: left;
+	font-size: 14px;
+}
+
+.sign_in_block .main .sign_in_button {
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.sign_in_block .main .sign_in_button button {
+	background: #fff;
+	padding: 6px 30px;
+	border: 1px solid transparent;
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+
+.sign_in_block .main .sign_in_button button p {
+	z-index: 50;
+	position: relative;
+	color: #aaa;
+	font-size: 16px;
+	margin: 0;
+	display: inline-block;
+	margin-top: 0px;
+	-webkit-transform: translateY(4px);
+	-ms-transform: translateY(4px);
+	transform: translateY(4px);
+	margin-left: 20px;
+}
+
+.sign_in_block .main .sign_in_button button img {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	z-index: 50;
+}
+
+.sign_in_block .main .sign_in_button button:before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	bottom: unset;
+	left: 0;
+	width: 101%;
+	height: 2px;
+	background: #aaa;
+	-webkit-transition: .9s ease-in-out;
+	transition: .9s ease-in-out;
+}
+
+.sign_in_block .main .sign_in_button button:after {
+	content: '';
+	position: absolute;
+	width: 105%;
+	height: 105%;
+	top: -100px;
+	left: 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#043d5a), color-stop(#2a3e6c), color-stop(#543a72), color-stop(#7c3068), to(#9a2550));
+	background: linear-gradient(to bottom, #043d5a, #2a3e6c, #543a72, #7c3068, #9a2550);
+	-webkit-transition: .7s ease-in-out;
+	transition: .7s ease-in-out;
+}
+
+.sign_in_block .main .sign_in_button button:hover {
+	border: 1px solid transparent;
+}
+
+.sign_in_block .main .sign_in_button button:hover:before {
+	top: 100%;
+	bottom: 0;
+	-webkit-transition: .7s ease-in-out;
+	transition: .7s ease-in-out;
+}
+
+.sign_in_block .main .sign_in_button button:hover:after {
+	top: 0;
+	-webkit-transition: .9s ease-in-out;
+	transition: .9s ease-in-out;
+	border: 1px solid transparent;
+}
+
+.sign_in_block .main .sign_in_button button:hover p {
+	color: #fbe9d2;
+}

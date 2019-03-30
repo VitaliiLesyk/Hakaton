@@ -1,0 +1,220 @@
+.log_in_block {
+	border: 1px solid #aaa;
+	-webkit-border-radius: 11px;
+	border-radius: 11px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#043d5a), color-stop(#2a3e6c), color-stop(#543a72), color-stop(#7c3068), to(#9a2550));
+	background: linear-gradient(to bottom, #043d5a, #2a3e6c, #543a72, #7c3068, #9a2550);
+}
+
+.log_in_block .top_line {
+	-webkit-border-top-left-radius: 10px;
+	border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	border-top-right-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	margin-bottom: 50px;
+	width: 499px;
+	-webkit-box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.4);
+}
+
+.log_in_block .top_line h1, .sign_in_block .top_line h1 {
+	text-transform: uppercase;
+	font-family: "Roboto-Regular";
+	color: #fbe9d2;
+	letter-spacing: .5px;
+	position: relative;
+	margin: 0;
+}
+
+.log_in_block .top_line h1:before, .sign_in_block .top_line h1:before {
+	content: 'LOG IN';
+	position: absolute;
+	right: 10px;
+	top: -40px;
+	color: rgba(255, 255, 255, 0.4);
+	font-size: 80px;
+}
+
+.log_in_block span, .sign_in_block span {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	font-family: "Roboto-Regular";
+	color: #aaa;
+	position: relative;
+	z-index: 60;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+
+.log_in_block span a, .sign_in_block span a {
+	font-size: 20px;
+	background: -webkit-linear-gradient(#aaa, #ccc);
+	cursor: pointer;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+
+.log_in_block span a:hover, .sign_in_block span a:hover {
+	background: #fff;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+
+.log_in_block .log_in, .sign_in_block .log_in {
+	display: block;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.log_in_block .log_in input, .sign_in_block .log_in input {
+	outline: none;
+	width: 200px;
+	height: 40px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 2px solid #eee;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #fff;
+	background: transparent;
+}
+
+.log_in_block .log_in input.name, .sign_in_block .log_in input.name {
+	float: left;
+	margin-left: 20px;
+}
+
+.log_in_block .log_in input.email, .sign_in_block .log_in input.email {
+	float: right;
+	margin-right: 20px;
+}
+
+.log_in_block .log_in input:focus, .sign_in_block .log_in input:focus {
+	border: 2px solid #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#043d5a), color-stop(#2a3e6c), color-stop(#543a72), color-stop(#7c3068), to(#9a2550));
+	background: linear-gradient(to bottom, #043d5a, #2a3e6c, #543a72, #7c3068, #9a2550);
+	border-image-slice: 4;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.log_in_block .log_in .sign_in_button, .sign_in_block .log_in .sign_in_button {
+	text-align: center;
+	margin-top: 15px;
+	overflow: hidden;
+	margin-top: 70px;
+	width: 200px;
+	margin: 70px auto 0;
+}
+
+.log_in_block .log_in .sign_in_button button, .sign_in_block .log_in .sign_in_button button {
+	background: #fff;
+	padding: 6px 30px;
+	border: 1px solid transparent;
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	position: relative;
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.log_in_block .log_in .sign_in_button button p, .sign_in_block .log_in .sign_in_button button p {
+	z-index: 50;
+	position: relative;
+	color: #aaa;
+	font-size: 16px;
+	margin: 0;
+	display: inline-block;
+	margin-top: 0px;
+	-webkit-transform: translateY(4px);
+	-ms-transform: translateY(4px);
+	transform: translateY(4px);
+	margin-left: 20px;
+}
+
+.log_in_block .log_in .sign_in_button button img, .sign_in_block .log_in .sign_in_button button img {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	z-index: 50;
+}
+
+.log_in_block .log_in .sign_in_button button:before, .sign_in_block .log_in .sign_in_button button:before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	bottom: unset;
+	left: 0;
+	width: 101%;
+	height: 2px;
+	background: #aaa;
+	-webkit-transition: .9s ease-in-out;
+	transition: .9s ease-in-out;
+}
+
+.log_in_block .log_in .sign_in_button button:after, .sign_in_block .log_in .sign_in_button button:after {
+	content: '';
+	position: absolute;
+	width: 105%;
+	height: 105%;
+	top: -100px;
+	left: 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#043d5a), color-stop(#2a3e6c), color-stop(#543a72), color-stop(#7c3068), to(#9a2550));
+	background: linear-gradient(to bottom, #043d5a, #2a3e6c, #543a72, #7c3068, #9a2550);
+	-webkit-transition: .7s ease-in-out;
+	transition: .7s ease-in-out;
+}
+
+.log_in_block .log_in .sign_in_button button:hover, .sign_in_block .log_in .sign_in_button button:hover {
+	border: 1px solid transparent;
+}
+
+.log_in_block .log_in .sign_in_button button:hover:before, .sign_in_block .log_in .sign_in_button button:hover:before {
+	top: 100%;
+	bottom: 0;
+	-webkit-transition: .7s ease-in-out;
+	transition: .7s ease-in-out;
+}
+
+.log_in_block .log_in .sign_in_button button:hover:after, .sign_in_block .log_in .sign_in_button button:hover:after {
+	top: 0;
+	-webkit-transition: .9s ease-in-out;
+	transition: .9s ease-in-out;
+	border: 1px solid transparent;
+}
+
+.log_in_block .log_in .sign_in_button button:hover p, .sign_in_block .log_in .sign_in_button button:hover p {
+	color: #fbe9d2;
+}
+
+.agree {
+	text-align: center;
+}
+
+.agree input {
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin-right: 10px;
+	border: 0;
+	background: transparent;
+}
+
+.agree p {
+	display: inline-block;
+	font-size: 14px;
+	color: #aaa;
+}

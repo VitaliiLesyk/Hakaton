@@ -1,0 +1,68 @@
+footer {
+	padding-top: 20px;
+	background-image: url(../../../assets/images/backgrounds/background.jpg);
+	font-size: 14px;
+	font-family: "Roboto-Regular";
+	color: #fbe9d2;
+}
+
+footer .logo {
+	text-align: center;
+}
+
+footer .logo .logo_img {
+	display: inline-block;
+	-webkit-transform: translateY(-26px);
+	-ms-transform: translateY(-26px);
+	transform: translateY(-26px);
+}
+
+footer .logo .logo_img img {
+	width: 65px;
+	height: 60px;
+	padding-right: 10px;
+}
+
+footer .logo .logo_text {
+	display: inline-block;
+}
+
+footer .logo .logo_text p, footer .logo .logo_text span {
+	display: inline-block;
+	color: #fff;
+	font-size: 31px;
+	margin: 0;
+	-webkit-transform: translateX(-30px);
+	-ms-transform: translateX(-30px);
+	transform: translateX(-30px);
+}
+
+footer .logo .logo_text span {
+	font-size: 15px;
+	-webkit-transform: translateY(-6px);
+	-ms-transform: translateY(-6px);
+	transform: translateY(-6px);
+}
+
+footer .country img {
+	width: 20px;
+	height: 10px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+footer .contact p {
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+footer .contact2 p {
+	margin: 0;
+}
+
+footer .contact2 img {
+	margin-right: 10px;
+	margin-top: 10px;
+	width: 32px;
+	height: 32px;
+}

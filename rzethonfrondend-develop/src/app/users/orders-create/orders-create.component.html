@@ -1,0 +1,92 @@
+<app-profile></app-profile>
+<div id="main_content">
+	<div class="main_content_wrapper">
+		<h1 class="title">You are creating you Order!</h1>
+		<form [formGroup]="createOrderForm" (ngSubmit)="onSubmit()">
+			<div id="wrapper">
+				<div class="toggles">
+					<button id="showall">Show All</button>
+					<button id="product">Products</button>
+					<button id="ux">UX Design</button>
+					<button id="graphic">Graphic Design</button>
+					<button id="motion">Motion Graphic</button>
+				</div>
+
+				<div class="posts">
+					<div class="motion post">Motion Design</div>
+					<div class="product post prod1">Web Design</div>
+					<div class="ux post">UX Design</div>
+					<div class="graphic post">Graphic Design</div>
+					<div class="product post">Web Design</div>
+					<div class="ux post">UX Design</div>
+					<div class="product post">Web Design</div>
+					<div class="motion post">Motion Design</div>
+					<div class="graphic post">Graphic Design</div>
+				</div>
+			</div>
+
+			<div class="creating_event_text">
+				<!-- <span>Please, write a little description to your order</span> -->
+				<textarea name="" id="" cols="30" rows="10" class="form-control" formControlName="description" placeholder="Remember, for what rly do you want to create the order!"></textarea>
+			</div>
+			<div class="col-lg-6 creating_event">
+				<div class="creating_event_decr">
+					<span>Name</span>
+					<input type="text" class="form-control" formControlName="name" placeholder="Training before you got a child">
+				</div>
+				<div class="creating_event_decr">
+					<span>City</span>
+					<input type="text" class="form-control" formControlName="city" placeholder="Where exectly is it going to be held?">
+				</div>
+				<div class="creating_event_decr">
+					<span>Charges</span>
+					<input type="number" class="form-control" formControlName="charges" placeholder="How many guests are you want to see?">
+				</div>
+				<div class="creating_event_decr">
+					<span>Finish order date</span>
+					<input type="datetime-local" class="form-control" formControlName="finishOrderDate" placeholder="Do you rly want to stop gathering money?">
+				</div>
+				<div class="creating_event_decr">
+					<span>Reward</span>
+					<input type="number" class="form-control" formControlName="reward" placeholder="And how much do you want to earn?">
+				</div>
+			</div>
+
+			<div class="col-lg-6 creating_event_second">
+				<div class="creating_event_decr">
+					<span>Country</span>
+					<input type="text" class="form-control" formControlName="country" placeholder="Where is it going to be held?">
+				</div>
+				<div class="creating_event_decr">
+					<span>Address</span>
+					<input type="text" class="form-control" formControlName="address" placeholder="Where super extremely exectly is it going to be held?">
+				</div>
+				<div class="creating_event_decr">
+					<span>Date</span>
+					<input type="datetime-local" class="form-control" formControlName="orderDate" placeholder="When do you want to look at theirs faces?">
+				</div>
+				<!-- <div class="creating_event_decr">
+					<span>Finish ticket selling date</span>
+					<input type="datetime-local" class="form-control" formControlName="finishTicketSellingDate" placeholder="Paper or elecronics bills?">
+				</div> -->
+				<div class="creating_event_decr">
+					<span>Organisation</span>
+					<input type="text" class="form-control" formControlName="organization" placeholder="Perfect name for your organisation">
+				</div>
+			</div>
+
+			<div class="creating_event_file">
+				<span>File</span>
+				<div class="file">
+					<p>Choose picture</p>
+					<input type="file" class="hide inputfile" id="upload" #uploader (change)="fileChange(uploader.files)" type="file"
+					 accept=".jpg, .jpeg, .png" />
+					<label for="upload"><img src="../../../assets/images/icons/file.png" alt=""></label>
+				</div>
+			</div>
+			<button class="create_event_button"><img src="../../../assets/images/icons/logo3.png" alt="">
+				<p>Create this!</p>
+			</button>
+		</form>
+	</div>
+</div>
